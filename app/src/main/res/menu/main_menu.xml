@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstItem"
+        android:title="Age And Name"/>
+    <item
+        android:id="@+id/secondItem"
+        android:title="Dial"/>
+    <item
+        android:id="@+id/thirdItem"
+        android:title="Tap to Notification"/>
+    <item
+        android:id="@+id/forthItem"
+        android:title="Contacts Permission"/>
+    <item
+        android:id="@+id/fifthitem"
+        android:title="Google Map"/>
+</menu>
