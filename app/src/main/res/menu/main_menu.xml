@@ -9,11 +9,9 @@
         android:title="Call"/>
     <item
         android:id="@+id/thirdItem"
-        android:title="Tap to Notification"/>
+        android:title="Map Notification"/>
     <item
         android:id="@+id/forthItem"
         android:title="Contacts Permission"/>
-    <item
-        android:id="@+id/fifthitem"
-        android:title="Google Map"/>
+
 </menu>

@@ -49,7 +49,7 @@ public class KebabMenuActivity extends AppCompatActivity {
                 startActivityForResult(intent2, 257);
                 break;
             case R.id.thirdItem:
-                showNotification("ATTENTION", "A vey Important Message");
+                showNotification("توجه", "برای ورود به نقشه گوگل ضربه بزنید");
                 break;
             case R.id.forthItem:
                 if (ContextCompat.checkSelfPermission(KebabMenuActivity.this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
