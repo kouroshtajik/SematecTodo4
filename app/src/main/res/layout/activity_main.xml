@@ -12,36 +12,43 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="لیست سایت ها"/>
-    <Button
-        android:id="@+id/btnEnter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="نقشه"/>
-    <EditText
+        android:text="اطلاعات خود را وارد کنید"
+        android:background="@color/teal_200"/>
+
+    <com.example.sematectodo4.VazirEditText
         android:inputType="number"
         android:id="@+id/edtAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="سن خود را وارد کنید"/>
-    <EditText
+        android:hint="سن خود را وارد کنید"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:layout_marginTop="3dp"/>
+
+    <com.example.sematectodo4.VazirEditText
         android:inputType="text"
         android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="نام خود را وارد کنید"/>
-    <Button
+        android:hint="نام خود را وارد کنید"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:layout_marginTop="6dp"/>
+
+    <com.example.sematectodo4.VazirButton
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ذخیره"/>
-    <TextView
+        android:text="ذخیره"
+        android:background="@drawable/my_button"
+        android:layout_marginTop="20sp"/>
+    <com.example.sematectodo4.VazirTextView
         android:id="@+id/txtAgeRes"
         android:textSize="20sp"
         android:layout_marginTop="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <TextView
+    <com.example.sematectodo4.VazirTextView
         android:id="@+id/txtNameRes"
         android:textSize="20sp"
         android:layout_width="wrap_content"

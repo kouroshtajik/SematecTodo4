@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AgeActivity">
-    <TextView
+    <com.example.sematectodo4.VazirTextView
+        android:gravity="left"
         android:textSize="25sp"
         android:id="@+id/txtAge"
-        android:hint="Empty"
+        android:hint="خالی"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -16,9 +17,12 @@
         app:layout_constraintVertical_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"/>
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/teal_200"
+        android:textStyle="bold"/>
 
-    <TextView
+    <com.example.sematectodo4.VazirTextView
+        android:gravity="left"
         android:textSize="25sp"
         android:id="@+id/txtName"
         android:layout_width="200dp"
@@ -26,14 +30,17 @@
         app:layout_constraintTop_toBottomOf="@id/txtAge"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0"
-        android:hint="Empty"
+        android:hint="خالی"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"/>
-    <TextView
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/teal_200"
+        android:textStyle="bold"/>
+
+    <com.example.sematectodo4.VazirTextView
         android:textSize="25sp"
         android:id="@+id/hint1"
-        android:text="AGE"
+        android:text="سن"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,11 +50,13 @@
         app:layout_constraintVertical_bias="0"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        />
-    <TextView
+        android:background="@color/teal_200"
+        android:textStyle="bold"/>
+
+    <com.example.sematectodo4.VazirTextView
         android:textSize="25sp"
         android:id="@+id/hint2"
-        android:text="NAME"
+        android:text="نام"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/hint1"
@@ -57,26 +66,36 @@
         app:layout_constraintVertical_bias="0"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-         />
-    <Button
+        android:background="@color/teal_200"
+        android:textStyle="bold"/>
+
+    <com.example.sematectodo4.VazirButton
         android:id="@+id/btnSave"
+        android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="ذخیره"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"/>
-    <Button
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@drawable/my_button"
+        android:textStyle="bold"/>
+
+    <com.example.sematectodo4.VazirButton
         android:id="@+id/btnBack"
+        android:textSize="25sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:text="ویرایش"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"/>
+        app:layout_constraintHorizontal_bias="0.9"
+        android:background="@drawable/my_button"
+        android:textStyle="bold"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

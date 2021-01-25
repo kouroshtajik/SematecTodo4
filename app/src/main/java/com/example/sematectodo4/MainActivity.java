@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("lifecycle", "onCreate");
 
-        Button btnEnter = findViewById(R.id.btnEnter);
+
         Button btnSave = findViewById(R.id.btnSave);
         EditText edtAge = findViewById(R.id.edtAge);
         EditText edtName = findViewById(R.id.edtName);
@@ -30,14 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView txtNameRes = findViewById(R.id.txtNameRes);
 
 
-        btnEnter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,27 +65,5 @@ public class MainActivity extends AppCompatActivity {
         Log.d("lifecycle", "onStart");
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("lifecycle", "onResume");
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("lifecycle", "onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("lifecycle", "onStop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d("lifecycle", "onDestroy");
-    }
 }
