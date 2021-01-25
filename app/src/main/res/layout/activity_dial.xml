@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DialActivity">
+    tools:context=".DialActivity"
+    android:background="@color/light_gray">
 
     <com.example.sematectodo4.VazirEditText
         android:gravity="right"
@@ -17,10 +18,12 @@
         android:layout_height="wrap_content"
         android:hint="شماره تلفن خود را وارد کنید"
         android:background="@color/teal_200"/>
+
     <com.example.sematectodo4.VazirButton
         android:id="@+id/btnDial"
         android:layout_marginLeft="160dp"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

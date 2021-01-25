@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@color/light_gray">
 
     <com.example.sematectodo4.VazirTextView
 
@@ -41,18 +42,23 @@
         android:layout_height="wrap_content"
         android:text="ذخیره"
         android:background="@drawable/my_button"
-        android:layout_marginTop="20sp"/>
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
     <com.example.sematectodo4.VazirTextView
         android:id="@+id/txtAgeRes"
         android:textSize="20sp"
         android:layout_marginTop="80dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+
     <com.example.sematectodo4.VazirTextView
         android:id="@+id/txtNameRes"
         android:textSize="20sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
 
 </LinearLayout>
