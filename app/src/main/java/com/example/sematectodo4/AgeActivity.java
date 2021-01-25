@@ -41,13 +41,15 @@ public class AgeActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit().putString("name", name).apply();
-                getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit().putString("age", age).apply();
                 if (name.isEmpty() || age.isEmpty()) {
                     Toast.makeText(AgeActivity.this, "Items Are EMPTY", Toast.LENGTH_LONG).show();
-                }else Toast.makeText(AgeActivity.this, "Items Saved", Toast.LENGTH_LONG).show();
-                Intent intent1 = new Intent();
-                finish();
+                }else {
+                    getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit().putString("name", name).apply();
+                    getSharedPreferences("userInfo", Context.MODE_PRIVATE).edit().putString("age", age).apply();
+                    Toast.makeText(AgeActivity.this, "Items Saved", Toast.LENGTH_LONG).show();
+                    Intent intent1 = new Intent();
+                    finish();
+                }
 
 
             }
